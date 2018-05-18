@@ -1,0 +1,19 @@
+Palaute
+#######
+
+TIEA311 Tietokonegrafiikan perusteet, kevät 2018, "Assignment 4"
+
+Korppiin merkitty numeerinen arvio tehtävästä:
+
+
+Perustelu ja korjausohjeet, jos Korppiin merkitty poikkeaa itsearviosta:
+(merkittiin itsearvion mukaisesti)
+
+Keväällä 2018 tästä tehtävästä ei ole aikataulusyistä mahdollista
+tarjota tarkempaa palautetta. Arviointi tehtiin varmistamalla, että
+koodiin tehdyt muutokset näyttävät päällisin puolin vastaavan
+itsearviota. Vain kaikista karkeimpiin ja "suoraan kasvoille
+hyppääviin" ongelmiin puututtiin tarvittaessa.
+
+(Tässä tapauksessa kaikki hyvin ainakin pikaisen silmäilyn
+perusteella:))
