@@ -4,6 +4,13 @@
 #define _USE_MATH_DEFINES
 #include <cmath>
 
+// The above legacy way of getting M_PI doesn't seem to be available in VS2017.
+// So we fix this by another legacy way. You may google current best practices,
+// but this works for us today:
+#ifndef M_PI
+#define M_PI 3.14159265358979323846
+#endif
+
 #include "SceneParser.h"
 #include "Camera.h" 
 #include "Light.h"
