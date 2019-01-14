@@ -1,1 +1,2 @@
-This file should contain the student's self-assessment and other relevant info.
+This file should contain the name of the student and his/her
+self-assessment according to our local exercise specifications.
