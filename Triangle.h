@@ -11,21 +11,22 @@ using namespace std;
 ///Add more fields as necessary,
 ///but do not remove hasTex, normals or texCoords
 ///they are filled in by other components
-class Triangle: public Object3D
+class Triangle : public Object3D
 {
 public:
-	Triangle();
-        ///@param a b c are three vertex positions of the triangle
-	Triangle( const Vector3f& a, const Vector3f& b, const Vector3f& c, Material* m):Object3D(m){
-          hasTex = false;
-	}
+    Triangle();
 
-	virtual bool intersect( const Ray& ray,  Hit& hit , float tmin){
-		return false;
-	}
-	bool hasTex;
-	Vector3f normals[3];
-	Vector2f texCoords[3];
+    ///@param a b c are three vertex positions of the triangle
+    Triangle(const Vector3f& a, const Vector3f& b, const Vector3f& c, Material* m) :Object3D(m) {
+        hasTex = false;
+    }
+
+    virtual bool intersect(const Ray& ray, Hit& hit, float tmin) {
+        return false;
+    }
+    bool hasTex;
+    Vector3f normals[3];
+    Vector2f texCoords[3];
 protected:
 
 };

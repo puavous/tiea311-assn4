@@ -15,67 +15,67 @@ public:
     Hit()
     {
         material = NULL;
-		t = FLT_MAX;
-		hasTex=false;
+        t = FLT_MAX;
+        hasTex = false;
     }
 
-    Hit( float _t, Material* m, const Vector3f& n )
-    { 
+    Hit(float _t, Material* m, const Vector3f& n)
+    {
         t = _t;
         material = m;
         normal = n;
-		hasTex=false;
+        hasTex = false;
     }
 
-    Hit( const Hit& h )
-    { 
-        t = h.t; 
-        material = h.material; 
+    Hit(const Hit& h)
+    {
+        t = h.t;
+        material = h.material;
         normal = h.normal;
-		hasTex=h.hasTex;
+        hasTex = h.hasTex;
     }
 
     // destructor
     ~Hit()
     {
-    
+
     }
 
     float getT() const
     {
         return t;
     }
-    
+
     Material* getMaterial() const
     {
         return material;
     }
-    
+
     const Vector3f& getNormal() const
     {
         return normal;
     }
 
-    void set( float _t, Material* m, const Vector3f& n )
+    void set(float _t, Material* m, const Vector3f& n)
     {
         t = _t;
         material = m;
         normal = n;
     }
-	void setTexCoord(const Vector2f & coord){
-		texCoord = coord;
-		hasTex = true;
-	}
-	bool hasTex;
-	Vector2f texCoord;
+    void setTexCoord(const Vector2f& coord) {
+        texCoord = coord;
+        hasTex = true;
+    }
+    bool hasTex;
+    Vector2f texCoord;
 private:
-	float t;
+    float t;
     Material* material;
     Vector3f normal;
 
 };
 
-inline ostream& operator << ( ostream &os, const Hit& h)
+inline ostream& operator << (ostream& os, const Hit& h)
 {
     os << "Hit <" << h.getT() << ", " << h.getNormal() << ">";
     return os;

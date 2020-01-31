@@ -12,14 +12,14 @@ class Ray
 {
 public:
 
-    Ray( const Vector3f& orig, const Vector3f& dir )
+    Ray(const Vector3f& orig, const Vector3f& dir)
     {
-        origin = orig; 
+        origin = orig;
         direction = dir;
     }
 
-    Ray( const Ray& r )
-    { 
+    Ray(const Ray& r)
+    {
         origin = r.origin;
         direction = r.direction;
     }
@@ -33,8 +33,8 @@ public:
     {
         return direction;
     }
-    
-    Vector3f pointAtParameter( float t ) const
+
+    Vector3f pointAtParameter(float t) const
     {
         return origin + direction * t;
     }
@@ -44,7 +44,7 @@ private:
     // don't use this constructor
     Ray()
     {
-        assert( false );
+        assert(false);
     }
 
     Vector3f origin;
@@ -52,7 +52,7 @@ private:
 
 };
 
-inline ostream& operator << ( ostream& os, const Ray& r)
+inline ostream& operator << (ostream& os, const Ray& r)
 {
     os << "Ray <" << r.getOrigin() << ", " << r.getDirection() << ">";
     return os;

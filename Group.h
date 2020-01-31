@@ -12,37 +12,36 @@ using  namespace std;
 ///TODO: 
 ///Implement Group
 ///Add data structure to store a list of Object* 
-class Group:public Object3D
+class Group : public Object3D
 {
 public:
 
-  Group(){
+    Group() {
 
-  }
-	
-  Group( int num_objects ){
+    }
 
-  }
+    Group(int num_objects) {
 
-  ~Group(){
-   
-  }
+    }
 
-  virtual bool intersect( const Ray& r , Hit& h , float tmin ) {
-		return false;
-   }
-	
-  void addObject( int index , Object3D* obj ){
+    ~Group() {
 
-  }
+    }
 
-  int getGroupSize(){ 
-  
-  }
+    virtual bool intersect(const Ray& r, Hit& h, float tmin) {
+        return false;
+    }
 
- private:
+    void addObject(int index, Object3D* obj) {
+
+    }
+
+    int getGroupSize() {
+
+    }
+
+private:
 
 };
 
 #endif
-	

@@ -33,7 +33,7 @@ class SceneParser
 {
 public:
 
-    SceneParser( const char* filename );
+    SceneParser(const char* filename);
     ~SceneParser();
 
     Camera* getCamera() const
@@ -50,15 +50,15 @@ public:
     {
         return ambient_light;
     }
-    
+
     int getNumLights() const
     {
         return num_lights;
     }
-    
-    Light* getLight( int i ) const
+
+    Light* getLight(int i) const
     {
-        assert( i >= 0 && i < num_lights );
+        assert(i >= 0 && i < num_lights);
         return lights[i];
     }
 
@@ -67,9 +67,9 @@ public:
         return num_materials;
     }
 
-    Material* getMaterial( int i ) const
+    Material* getMaterial(int i) const
     {
-        assert( i >= 0 && i < num_materials );
+        assert(i >= 0 && i < num_materials);
         return materials[i];
     }
 
@@ -82,7 +82,7 @@ private:
 
     SceneParser()
     {
-        assert( false );
+        assert(false);
     }
 
     void parseFile();
@@ -90,11 +90,11 @@ private:
     void parseBackground();
     void parseLights();
     Light* parseDirectionalLight();
-	Light* parsePointLight();
+    Light* parsePointLight();
     void parseMaterials();
     Material* parseMaterial();
 
-    Object3D* parseObject( char token[ MAX_PARSER_TOKEN_LENGTH ] );
+    Object3D* parseObject(char token[MAX_PARSER_TOKEN_LENGTH]);
     Group* parseGroup();
     Sphere* parseSphere();
     Plane* parsePlane();
@@ -102,7 +102,7 @@ private:
     Mesh* parseTriangleMesh();
     Transform* parseTransform();
 
-    int getToken( char token[ MAX_PARSER_TOKEN_LENGTH ] );
+    int getToken(char token[MAX_PARSER_TOKEN_LENGTH]);
     Vector3f readVector3f();
     Vector2f readVec2f();
     float readFloat();
