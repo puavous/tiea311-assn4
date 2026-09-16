@@ -1,5 +1,5 @@
 This is an adapted "exercise starter code" based on the following:
-https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-837-computer-graphics-fall-2012/assignments/
+https://ocw.mit.edu/courses/6-837-computer-graphics-fall-2012/pages/assignments/
 
 License terms that apply to the sources, as far as I understand:
 https://ocw.mit.edu/terms/
@@ -26,4 +26,4 @@ IMPORTANT:
 
 The self-assessment template "Itsearvio.txt" file is in Finnish,
 because these codes are adapted to our local course that is taught in
-Finnish: http://users.jyu.fi/~nieminen/tgp19/
+Finnish: https://tim.jyu.fi/view/kurssit/tie/tiea311/koti
